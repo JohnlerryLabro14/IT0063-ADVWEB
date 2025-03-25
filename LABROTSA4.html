@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Guide</title>
+    <link rel="stylesheet" href="LABROTSA4.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="background-container">
+        <div class="container text-center mt-4">
+            <h1></h1>
+            <div class="row mt-3">
+                <div class="col-md-3">
+                    <div class="card restaurant-card" onclick="showModal('gabelLoffelModal')">
+                        <img src="gabel_loffel.jpg" class="card-img-top" alt="Gabel Loffel">
+                        <div class="card-body">
+                            <h5 class="card-title">GABEL LOFFEL</h5>
+                            <p class="card-text">Authentic homemade dishes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card restaurant-card" onclick="showModal('garyGariModal')">
+                        <img src="gary_gari.jpg" class="card-img-top" alt="Gary Gari">
+                        <div class="card-body">
+                            <h5 class="card-title">GARY GARI</h5>
+                            <p class="card-text">Fine dining and cocktails.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card restaurant-card" onclick="showModal('ilPiattoModal')">
+                        <img src="il_piatto.jpg" class="card-img-top" alt="Il Piatto">
+                        <div class="card-body">
+                            <h5 class="card-title">IL PIATTO</h5>
+                            <p class="card-text">Classic grilled specialties.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card restaurant-card" onclick="showModal('pierrePlattiersModal')">
+                        <img src="PIERRE_PLATTERS.jpg" class="card-img-top" alt="Pierre Plattiers">
+                        <div class="card-body">
+                            <h5 class="card-title">PIERRE PLATTERS</h5>
+                            <p class="card-text">Seafood and gourmet delights.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-warning mt-3" onclick="hideAllModals()">Main Menu</button>
+        </div>
+    </div>
+
+    <div id="gabelLoffelModal" class="restaurant-modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideAllModals()">&times;</span>
+            <img src="GABEL_LOFFEL.jpg" alt="Gabel Loffel">
+            <p>Authentic homemade dishes with fresh ingredients.</p>
+            <p>Location: Downtown Meridien</p>
+            <p>Price: $$</p>
+            <p>Opening Hours: 10 AM - 10 PM</p>
+            <p>Authentic food made home and served at your table for your delight!</p>
+        </div>
+    </div>
+    <div id="garyGariModal" class="restaurant-modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideAllModals()">&times;</span>
+            <img src="GARY_GARI.jpg" alt="Gary Gari">
+            <p>Fine dining and cocktail lounge.</p>
+            <p>Location: City Center</p>
+            <p>Price: $$$</p>
+            <p>Opening Hours: 5 PM - 12 AM</p>
+            <p>Cocktails, Drinks and Booz that will surely up your taste.</p>
+        </div>
+    </div>
+    <div id="ilPiattoModal" class="restaurant-modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideAllModals()">&times;</span>
+            <img src="IL_PIATTO.jpg" alt="Il Piatto">
+            <p>Classic Italian and grilled favorites.</p>
+            <p>Location: Riverside District</p>
+            <p>Price: $$</p>
+            <p>Opening Hours: 11 AM - 11 PM</p>
+            <p>Delicious and Savory food that will make customers love the food.</p>
+        </div>
+    </div>
+    <div id="pierrePlattiersModal" class="restaurant-modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideAllModals()">&times;</span>
+            <img src="PIERRE_PLATTERS.jpg" alt="Pierre Plattiers">
+            <p>Exquisite seafood and gourmet dishes.</p>
+            <p>Location: Harbor Bay</p>
+            <p>Price: $$$$</p>
+            <p>Opening Hours: 12 PM - 10 PM</p>
+            <p>The taste of the sea will make the customers feel the ocean and savor the moment</p>
+        </div>
+    </div>
+
+    <script src="LABROTSA4.js"></script>
+</body>
+</html>
